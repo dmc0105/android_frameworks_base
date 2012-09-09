@@ -1266,8 +1266,8 @@ public class PhoneWindowManager implements WindowManagerPolicy {
 
         if (shortSizeDp < 600) {
             // 0-599dp: "phone" UI with a separate status & navigation bar
-            mHasSystemNavBar = false;
-            mNavigationBarCanMove = true;
+            mHasSystemNavBar = true;
+            mNavigationBarCanMove = false;
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.TABLET_UI, 0);
         } else if (shortSizeDp < 720) {
