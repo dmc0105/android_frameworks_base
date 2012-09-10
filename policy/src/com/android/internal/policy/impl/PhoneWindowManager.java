@@ -1272,7 +1272,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                     Settings.System.TABLET_UI, 0);
         } else if (shortSizeDp < 720) {
             // 600-719dp: "phone" UI with modifications for larger screens
-            mHasSystemNavBar = false;
+            mHasSystemNavBar = true;
             mNavigationBarCanMove = false;
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.TABLET_UI, 2);
